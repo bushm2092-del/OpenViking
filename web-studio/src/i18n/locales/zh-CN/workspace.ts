@@ -27,7 +27,7 @@ const workspace = {
         userId: '用户 ID',
         userIdPlaceholder: '输入用户 ID',
       },
-      defaultTitle: 'OpenViking Studio',
+      defaultTitle: 'pandora-数据中台',
     },
     navigation: {
       home: {
@@ -76,7 +76,7 @@ const workspace = {
       },
       loadingSessions: '加载中...',
       noSessions: '暂无会话',
-      workspaceGroupLabel: 'OpenViking Studio',
+      workspaceGroupLabel: 'pandora-数据中台',
     },
   },
   monitoringPage: {
@@ -800,9 +800,9 @@ const workspace = {
     },
     page: {
       adminDescription:
-        '配置当前 OpenViking Studio 身份，并管理账号、用户和 API 密钥。',
+        '配置当前 pandora-数据中台 身份，并管理账号、用户和 API 密钥。',
       description:
-        '配置当前 OpenViking Studio 的服务地址和 API 密钥，查看当前身份下的数据。',
+        '配置当前 pandora-数据中台 的服务地址和 API 密钥，查看当前身份下的数据。',
       title: '连接设置',
     },
     placeholders: {
@@ -898,7 +898,7 @@ const workspace = {
     page: {
       description:
         '汇总上下文数据、今日检索、Token 用量和上下文提交等运行数据。',
-      eyebrow: 'OpenViking Studio',
+      eyebrow: 'pandora-数据中台',
       settings: '连接与设置',
       title: '概览',
     },

@@ -1,7 +1,7 @@
 {
-  "short_name": "OpenViking",
-  "name": "OpenViking Studio",
-  "description": "OpenViking Studio — agent-native context database UI",
+  "short_name": "pandora",
+  "name": "pandora-数据中台",
+  "description": "pandora-数据中台 — agent-native context database UI",
   "icons": [
     {
       "src": "favicon-32.png",

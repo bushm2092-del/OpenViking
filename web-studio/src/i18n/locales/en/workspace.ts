@@ -27,7 +27,7 @@ const workspace = {
         userId: 'User ID',
         userIdPlaceholder: 'Enter a User ID',
       },
-      defaultTitle: 'OpenViking Studio',
+      defaultTitle: 'pandora-数据中台',
     },
     navigation: {
       home: {
@@ -76,7 +76,7 @@ const workspace = {
       },
       loadingSessions: 'Loading...',
       noSessions: 'No sessions',
-      workspaceGroupLabel: 'OpenViking Studio',
+      workspaceGroupLabel: 'pandora-数据中台',
     },
   },
   monitoringPage: {
@@ -837,9 +837,9 @@ const workspace = {
     },
     page: {
       adminDescription:
-        'Configure the active OpenViking Studio identity and manage accounts, users, and API keys.',
+        'Configure the active pandora-数据中台 identity and manage accounts, users, and API keys.',
       description:
-        'Configure the OpenViking Studio server URL and API key, then view data for the current identity.',
+        'Configure the pandora-数据中台 server URL and API key, then view data for the current identity.',
       title: 'Connection & Identity',
     },
     placeholders: {
@@ -936,7 +936,7 @@ const workspace = {
     page: {
       description:
         'Aligned with the product overview: menu entries, context data volume, today tokens, today retrievals, agent access, token trend, and context commit stats.',
-      eyebrow: 'OpenViking Studio',
+      eyebrow: 'pandora-数据中台',
       settings: 'Connection & Settings',
       title: 'Overview',
     },

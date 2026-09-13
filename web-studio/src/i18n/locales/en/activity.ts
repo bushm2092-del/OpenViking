@@ -107,7 +107,7 @@ const activity = {
       scopesLabel: 'Scopes',
       scopesNone: '(none)',
       signInRequired:
-        'Sign in to OpenViking Studio (Connection & Identity) or paste an API key below to authorize this client.',
+        'Sign in to pandora-数据中台 (Connection & Identity) or paste an API key below to authorize this client.',
       openConnectionSettings: 'Open Connection & Identity',
       authorize: 'Authorize',
       deny: 'Deny',
@@ -133,7 +133,7 @@ const activity = {
       verifyError: 'Authorization failed: {{message}}',
       noApiKey: 'No API key available. Select an identity or paste a key.',
       signInRequired:
-        'Sign in to OpenViking Studio (Connection & Identity) or paste an API key below to verify.',
+        'Sign in to pandora-数据中台 (Connection & Identity) or paste an API key below to verify.',
     },
   },
   playground: {

@@ -9,7 +9,6 @@ import {
   ClipboardListIcon,
   Clock3Icon,
   HomeIcon,
-  GithubIcon,
   KeyRoundIcon,
   MoonIcon,
   MonitorUpIcon,
@@ -331,6 +330,25 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
       className="flex h-svh overflow-hidden bg-sidebar"
     >
       <Sidebar variant="sidebar" collapsible="icon">
+        <Link
+          to="/"
+          aria-label="pandora-数据中台"
+          title="pandora-数据中台"
+          className="flex h-14 shrink-0 items-center gap-2.5 border-b border-sidebar-border/70 px-4 group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:px-0"
+        >
+          <img
+            src={`${import.meta.env.BASE_URL}pandora-mark.svg`}
+            alt=""
+            aria-hidden="true"
+            width={32}
+            height={32}
+            className="size-8 shrink-0"
+          />
+          <span className="min-w-0 whitespace-nowrap group-data-[collapsible=icon]:hidden">
+            <span className="text-base font-bold tracking-tight">pandora</span>
+            <span className="text-sm text-muted-foreground">-数据中台</span>
+          </span>
+        </Link>
         <SidebarHeader className="h-12 border-b border-sidebar-border/70 px-2 py-0">
           <div className="flex h-full items-center justify-between gap-2 group-data-[collapsible=icon]:justify-center">
             <div className="min-w-0 flex-1 group-data-[collapsible=icon]:hidden">
@@ -554,16 +572,6 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
               <MoonIcon className="size-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
               <SunIcon className="absolute size-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
             </button>
-
-            <a
-              href="https://github.com/volcengine/OpenViking"
-              target="_blank"
-              rel="noreferrer"
-              aria-label={t('footer.github', { ns: 'appShell' })}
-              className={HEADER_ICON_BUTTON_CLASS}
-            >
-              <GithubIcon className="size-5" />
-            </a>
 
             <div className="h-6 w-px bg-border/80" aria-hidden="true" />
 

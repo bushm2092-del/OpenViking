@@ -23,6 +23,7 @@ import {
 } from '#/components/ui/select'
 import { useAppConnection } from '#/hooks/use-app-connection'
 import { fetchAdminUsers } from '#/lib/admin'
+import { getAccountDisplayName } from '#/lib/account-display-name'
 import type { AdminConnection } from '#/lib/admin'
 import { resolveStudioManagementCapabilities } from '#/lib/studio-permissions'
 
@@ -44,7 +45,8 @@ export function CurrentUserMenu() {
   const [manualUserId, setManualUserId] = React.useState('')
   const [switchingUserId, setSwitchingUserId] = React.useState('')
   const { accountId, userId } = connection
-  const accountLabel = accountId || t('header.currentUser.unset')
+  const accountLabel =
+    getAccountDisplayName(accountId) || t('header.currentUser.unset')
   const userLabel = userId || t('header.currentUser.unset')
   const { canManageUsers } = resolveStudioManagementCapabilities({
     hasControlCredential: Boolean(connection.adminApiKey.trim()),

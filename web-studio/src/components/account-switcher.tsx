@@ -41,6 +41,7 @@ import { DEFAULT_USER_ID } from '#/lib/admin-options'
 import { PLAIN_INPUT_PROPS } from '#/lib/form-input'
 import { resolveStudioManagementCapabilities } from '#/lib/studio-permissions'
 import { cn } from '#/lib/utils'
+import { getAccountDisplayName } from '#/lib/account-display-name'
 
 export function selectAccountUser(
   users: readonly AdminUser[],
@@ -118,8 +119,12 @@ export function AccountSwitcher() {
     if (!normalizedSearch) {
       return accounts
     }
-    return accounts.filter((account) =>
-      account.accountId.toLowerCase().includes(normalizedSearch),
+    return accounts.filter(
+      (account) =>
+        account.accountId.toLowerCase().includes(normalizedSearch) ||
+        getAccountDisplayName(account.accountId)
+          .toLowerCase()
+          .includes(normalizedSearch),
     )
   }, [accountsQuery.data, search])
 
@@ -225,7 +230,7 @@ export function AccountSwitcher() {
     },
   })
 
-  const accountLabel = connection.accountId || t('unset')
+  const accountLabel = getAccountDisplayName(connection.accountId) || t('unset')
 
   if (!canManageAccounts) {
     return (
@@ -313,7 +318,7 @@ export function AccountSwitcher() {
                     </span>
                     <span className="min-w-0 flex-1">
                       <span className="block truncate text-sm font-medium">
-                        {account.accountId}
+                        {getAccountDisplayName(account.accountId)}
                       </span>
                       <span className="block text-xs text-muted-foreground">
                         {t('memberCount', { count: account.userCount })}

@@ -103,7 +103,7 @@ const activity = {
       scopesLabel: '权限范围',
       scopesNone: '（无）',
       signInRequired:
-        '请先在“连接设置”中配置 OpenViking Studio 身份凭证，或在下方临时粘贴 API 密钥完成授权。',
+        '请先在“连接设置”中配置 pandora-数据中台 身份凭证，或在下方临时粘贴 API 密钥完成授权。',
       openConnectionSettings: '打开连接设置',
       authorize: '授权',
       deny: '拒绝',
@@ -126,7 +126,7 @@ const activity = {
       verifyError: '授权失败：{{message}}',
       noApiKey: '没有可用的 API 密钥。请选择一个身份或粘贴密钥。',
       signInRequired:
-        '请先在“连接设置”中配置 OpenViking Studio 身份凭证，或在下方临时粘贴 API 密钥完成验证。',
+        '请先在“连接设置”中配置 pandora-数据中台 身份凭证，或在下方临时粘贴 API 密钥完成验证。',
     },
   },
   playground: {
